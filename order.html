@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <title>BlackDish</title>
+  </head>
+  <body>
+<!--COÑOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+<!--
+*s = small
+*m= medium
+*l= large
+-->
+
+    <!-- Modal Structure -->
+    <div id="modalOrder" class="modal modal-fixed-footer">
+      <div id="modalContainer" class="modal-content">
+        <div class="container">
+          <table class="striped">
+            <tr>
+              <td>
+                <h4>Torta al pastor</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Una rica torta preparada con carne al pastor, y como lo dicta la ley sin piña</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img style="border-radius: 20px" src="img/pizza.jpg" width="100%" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Prepared By Taqueria Playa Tropical</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="points">+5</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pill-modal" align="center">
+          <a href="#!" class="modal-close waves-effect waves-green white-text">Make Order</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--AmaMeMie-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        validaLogin();
+        $('.dropdown-trigger').dropdown();
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+        $('#modalOrder').modal('open');
+        loadRestaurantes();
+        loadPerfil();
+      });
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <!--Script to login with facebook-->
+  </body>
+</html>
